@@ -1,0 +1,89 @@
+body { 
+	position: absolute;
+	margin: 0px;
+	padding: 0px;
+	background-image: url("background.jpg");
+	background-repeat: repeat;
+	background-size: cover;
+}
+
+.gallery img {
+	position: absolute;
+	width: 256;
+	height:256;
+	border-style: ridge;
+	border-color: purple;
+}
+
+#img1 {
+	position:absolute;
+	top: 25;
+	left:100;
+}
+
+#img2 {
+	position:absolute;
+	top: 25;
+	left:400;
+}
+
+#img3 {
+	position:absolute;
+	top: 25;
+	left:700;
+}
+
+#img4 {
+	position:absolute;
+	top: 25;
+	left:1000;
+}
+
+#img5 {
+	position:absolute;
+	top: 350;
+	left:100;
+}
+
+#img6 {
+	position:absolute;
+	top: 350;
+	left:400;
+}
+
+#img7 {
+	position:absolute;
+	top: 350;
+	left:700;
+}
+
+#img8 {
+	position:absolute;
+	top: 350;
+	left:1000;
+}
+
+#img9 {
+	position:absolute;
+	top: 700;
+	left:100;
+}
+
+#img10 {
+	position:absolute;
+	top: 700;
+	left:400;
+}
+
+#img11 {
+	position:absolute;
+	top: 700;
+	left:700;
+}
+
+#img12 {
+	position:absolute;
+	top: 700;
+	left:1000;
+}
+

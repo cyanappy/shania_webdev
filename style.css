@@ -1,4 +1,5 @@
 body { 
+	position: fixed;
 	margin: 0px;
 	padding: 0px;
 	background-image: url("background.jpg");
@@ -6,18 +7,55 @@ body {
 	background-size: cover;
 }
 
-#imagelayout {
-	position: fixed;
-	opacity:0.8;
-	width: 300;
-	top: 50;
+.quote{
+	position: absolute;
+	font-family:Helvetica;
+	font-size: 30px;
+	width: 400;
+	top: -10;
 	left: 550;
+	display: inline-block;
+	color:white;
+	font-weight: Bold;
+	
+}
+
+.aboutme{
+	position: absolute;
+	font-family:Helvetica;
+}
+
+#link{
+	position: absolute;
+	display: inline-block;
+	font-family: Helvetica;
+	font-weight: Bold;
+	top: 10;
+	left: 350;
+}
+
+#gallerytext{
+	position: absolute;
+	display: inline-block;
+	font-family: Helvetica;
+	font-weight: Bold;
+	top: 0;
+	left: 50;
+}
+
+#imagelayout {
+	position: absolute;
+	opacity:0.8;
+	width: 820;
+	height: 610;
+	top: 0;
+	left: 520;
 }
 
 #profilepic {
 	position: absolute;
-	top: 100;
-	left: 640;
+	top: 65;
+	left: 550;
 	
 }
 
@@ -27,4 +65,78 @@ body {
 	position: absolute;
 	top: 280;
 	left: 625;
+}
+
+.fling-minislide {width:485px; height:450px; overflow:hidden; position:absolute; top: 390; left:20; }
+.fling-minislide img{ position:absolute; animation:fling-minislide 20s infinite; opacity:0; width: 90%; height: auto;}
+
+@keyframes fling-minislide {25%{opacity:1;} 40%{opacity:0;}}
+.fling-minislide img:nth-child(4){animation-delay:0s;}
+.fling-minislide img:nth-child(3){animation-delay:5s;}
+.fling-minislide img:nth-child(2){animation-delay:10s;}
+.fling-minislide img:nth-child(1){animation-delay:15s;}
+
+#gallerybg {
+	position: absolute;
+	top: 0;
+	left: 20;
+	height: 350;
+	width: 485;
+	opacity: 0.6
+}
+
+
+.gallery img {
+	width:128;
+	height:128;
+	border-style: ridge;
+	border-color: purple;
+}
+
+.galler h {
+	position: absolute;
+	font-family: Helvetica;
+	font-weight: Bold;
+	left: 20;	
+}
+
+.gallery2 img {
+	width:485;
+	height:220;
+}
+
+#img1 {
+	position: absolute;
+	top: 60;
+	left: 50;
+}
+
+#img2 {
+	position: absolute;
+	top: 60;
+	left: 200;
+}
+
+#img3 {
+	position: absolute;
+	top: 60;
+	left: 350;
+}
+
+#img4 {
+	position: absolute;
+	top: 210;
+	left: 50;
+}
+
+#img5 {
+	position: absolute;
+	top: 210;
+	left: 200;
+}
+
+#img6 {
+	position: absolute;
+	top: 210;
+	left: 350;
 }
