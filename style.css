@@ -24,7 +24,7 @@ body {
 
 .aboutme{
 	position: absolute;
-	font-family:Helvetica;
+	font-family:FreeMono, monospace;
 	top: 50;
 	left: 980;
 	color:white;
@@ -99,7 +99,7 @@ body {
 
 #imagelayout {
 	position: absolute;
-	opacity:0.8;
+	opacity:0.5;
 	width: 820;
 	height: 610;
 	top: 0;
@@ -144,7 +144,7 @@ body {
 	width:128;
 	height:128;
 	border-style: ridge;
-	border-color: purple;
+	border-color: black;
 }
 
 .galler h {
