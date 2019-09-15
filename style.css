@@ -6,8 +6,21 @@ body {
 	background-repeat: no-repeat;
 	background-size: cover;
 }
+//profile layout
+#profilepic {
+	position: absolute;
+	top: 65;
+	left: 550;
+	
+}
 
-
+#desc {
+	font-family: Helvetica;
+	color: #C0C0C0;
+	position: absolute;
+	top: 280;
+	left: 625;
+}
 
 .quote{
 	position: absolute;
@@ -20,6 +33,16 @@ body {
 	color:white;
 	font-weight: Bold;
 	
+}
+
+
+#imagelayout {
+	position: absolute;
+	opacity:0.5;
+	width: 820;
+	height: 610;
+	top: 0;
+	left: 520;
 }
 
 .aboutme{
@@ -87,7 +110,7 @@ body {
 	top: 10;
 	left: 350;
 }
-
+//gallery layout
 #gallerytext{
 	position: absolute;
 	display: inline-block;
@@ -97,30 +120,7 @@ body {
 	left: 50;
 }
 
-#imagelayout {
-	position: absolute;
-	opacity:0.5;
-	width: 820;
-	height: 610;
-	top: 0;
-	left: 520;
-}
-
-#profilepic {
-	position: absolute;
-	top: 65;
-	left: 550;
-	
-}
-
-#desc {
-	font-family: Helvetica;
-	color: #C0C0C0;
-	position: absolute;
-	top: 280;
-	left: 625;
-}
-
+//slideshow pseudo class
 .fling-minislide {width:485px; height:450px; overflow:hidden; position:absolute; top: 390; left:20; }
 .fling-minislide img{ position:absolute; animation:fling-minislide 20s infinite; opacity:0; width: 90%; height: auto;}
 
@@ -129,7 +129,7 @@ body {
 .fling-minislide img:nth-child(3){animation-delay:5s;}
 .fling-minislide img:nth-child(2){animation-delay:10s;}
 .fling-minislide img:nth-child(1){animation-delay:15s;}
-
+//gallery background
 #gallerybg {
 	position: absolute;
 	top: 0;
@@ -139,7 +139,7 @@ body {
 	opacity: 0.1
 }
 
-
+//gallery pseudo class
 .gallery img {
 	width:128;
 	height:128;
@@ -158,7 +158,7 @@ body {
 	width:485;
 	height:220;
 }
-
+//gallery position
 #img1 {
 	position: absolute;
 	top: 60;
