@@ -6,7 +6,16 @@ body {
 	background-repeat: no-repeat;
 	background-size: cover;
 }
-//profile layout
+/*profile layout*/
+#imagelayout {
+	position: absolute;
+	opacity:0.8;
+	width: 820;
+	height: 610;
+	top: 0;
+	left: 520;
+}
+
 #profilepic {
 	position: absolute;
 	top: 65;
@@ -15,7 +24,7 @@ body {
 }
 
 #desc {
-	font-family: Helvetica;
+	font-family:FreeMono, monospace;
 	color: #C0C0C0;
 	position: absolute;
 	top: 280;
@@ -35,49 +44,47 @@ body {
 	
 }
 
-
-#imagelayout {
-	position: absolute;
-	opacity:0.5;
-	width: 820;
-	height: 610;
-	top: 0;
-	left: 520;
-}
-
 .aboutme{
 	position: absolute;
 	font-family:FreeMono, monospace;
 	top: 50;
-	left: 980;
+	left: 930;
 	color:white;
 	font-weight: Bold;
 	width: 400;
 }
 
 .aboutme img{
-	width: 64;
-	height: 64;
+	width: 38;
+	height: 32;
 }
 
+#peppa{
+	position: absolute;
+	width: 128;
+	height: 128;
+	top: 430;
+	right: -20;
+}
+/*social link*/
 #fb {
 	position: absolute;
-	top:450;
-	left: 0;
+	top:-35;
+	left: 180;
 }
 
 #twitter {
 	position: absolute;
-	top:450;
-	left: 80;
+	top:-35;
+	left: 230;
 }
 
 #insta {
 	position: absolute;
-	top:450;
-	left: 160;
+	top: -35;
+	left: 280;
 }
-
+/*gifs*/
 .gif{
 	position: absolute;
 	top: 355;
@@ -102,6 +109,15 @@ body {
 	
 }
 
+.gif4{
+	position: absolute;
+	top: 470;
+	left: 700;
+	width: 95;
+	height: 130;
+	
+}
+
 #link{
 	position: absolute;
 	display: inline-block;
@@ -110,26 +126,53 @@ body {
 	top: 10;
 	left: 350;
 }
-//gallery layout
+
+/*slideshow preview*/
+.fling-minislide {
+	width:500px; 
+	height: 800px; 
+	overflow:auto; 
+	display:block;
+	position:absolute; 
+	top: 354; 
+	left:20; 
+}
+.fling-minislide img{ 
+	position:absolute; 
+	animation:fling-minislide 60s infinite; 
+	opacity:0; 
+	width: 90%; 
+	height: auto;
+	border-style: ridge;
+	border-color: black;
+	}
+
+@keyframes fling-minislide {25%{opacity:1;} 40%{opacity:0;}}
+.fling-minislide img:nth-child(12){animation-delay:0s;}
+.fling-minislide img:nth-child(11){animation-delay:5s;}
+.fling-minislide img:nth-child(10){animation-delay:10s;}
+.fling-minislide img:nth-child(9){animation-delay:15s;}
+.fling-minislide img:nth-child(8){animation-delay:20s;}
+.fling-minislide img:nth-child(7){animation-delay:25s;}
+.fling-minislide img:nth-child(6){animation-delay:30s;}
+.fling-minislide img:nth-child(5){animation-delay:35s;}
+.fling-minislide img:nth-child(4){animation-delay:40s;}
+.fling-minislide img:nth-child(3){animation-delay:45s;}
+.fling-minislide img:nth-child(2){animation-delay:50s;}
+.fling-minislide img:nth-child(1){animation-delay:55s;}
+
+/*gallery layout*/
+
 #gallerytext{
 	position: absolute;
 	display: inline-block;
-	font-family: Helvetica;
+	color:white;
+	font-family:FreeMono, monospace;
 	font-weight: Bold;
 	top: 0;
 	left: 50;
 }
 
-//slideshow pseudo class
-.fling-minislide {width:485px; height:450px; overflow:hidden; position:absolute; top: 390; left:20; }
-.fling-minislide img{ position:absolute; animation:fling-minislide 20s infinite; opacity:0; width: 90%; height: auto;}
-
-@keyframes fling-minislide {25%{opacity:1;} 40%{opacity:0;}}
-.fling-minislide img:nth-child(4){animation-delay:0s;}
-.fling-minislide img:nth-child(3){animation-delay:5s;}
-.fling-minislide img:nth-child(2){animation-delay:10s;}
-.fling-minislide img:nth-child(1){animation-delay:15s;}
-//gallery background
 #gallerybg {
 	position: absolute;
 	top: 0;
@@ -139,7 +182,7 @@ body {
 	opacity: 0.1
 }
 
-//gallery pseudo class
+
 .gallery img {
 	width:128;
 	height:128;
@@ -149,16 +192,17 @@ body {
 
 .galler h {
 	position: absolute;
-	font-family: Helvetica;
+	color:white;
+	font-family:FreeMono, monospace;
 	font-weight: Bold;
 	left: 20;	
 }
 
 .gallery2 img {
 	width:485;
-	height:220;
+	height:250;
 }
-//gallery position
+
 #img1 {
 	position: absolute;
 	top: 60;
@@ -194,3 +238,19 @@ body {
 	top: 210;
 	left: 350;
 }
+
+/*link color*/
+a:link{
+  color:white;
+}
+a:visited{
+  color:white;
+}
+a:hover{
+  color:white;
+}
+a:focus{
+  color:white;
+}
+a:active{
+  color:white;
